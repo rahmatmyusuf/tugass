@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>guest book</title>
+</head>
+<body>
+<form method=post action=post.php>
+<table border='0' cellspacing='0' cellpadding='0' align=center width=300>
+<tr><td><font face='Verdana' size='2'>Your Name *</font><td><input type=text name=name></td></tr>
+<tr bgcolor=#f1f1f1><td><font face='Verdana' size='2'>Email *</font><td><input type=text name=email></td></tr>
+<tr><td><font face='Verdana' size='2'>Country</font><td><input type=text name=country></td></tr>
+<tr bgcolor=#f1f1f1 ><td colspan=2 align=center><textarea name=message rows=5 cols=40></textarea></td></tr>
+<tr ><td colspan=2 align=center><input type=submit value='Add Entry' name="masuk"></td></tr>
+</table></form>
+</body>
+</html>

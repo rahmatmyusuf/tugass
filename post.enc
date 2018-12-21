@@ -1,0 +1,25 @@
+<?php
+	if($_POST['masuk']){
+		mysql_connect("localhost", "root", "");
+		mysql_select_db("guestbook");
+ 
+		$name	= htmlentities(mysql_real_escape_string($_POST['name']));
+		$email	= htmlentities(mysql_real_escape_string($_POST['email']));
+		$country	= htmlentities(mysql_real_escape_string($_POST['country']));
+		$message	= htmlentities(mysql_real_escape_string($_POST['message']));
+		$tgl	= time();
+		
+ 		$result=mysql_query("INSERT INTO bukutamu VALUES(NULL , '$name', '$email', '$country', '$message', '$tgl')");
+
+if($result){
+echo "Successful";
+echo "<BR>";}
+
+else {
+echo "ERROR";
+}
+
+mysql_close();
+
+	}
+?>
